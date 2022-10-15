@@ -1,29 +1,17 @@
 package src;
 
-public class ProductMenu {
+public abstract class ProductMenu {
 
-	public void showMenu() {
+	public abstract void showMenu();
 
-	}
+	public abstract void showAddButton();
 
-	public void showAddButton() {
+	public abstract void showRadioButton();
 
-	}
+	public abstract void showViewButton();
 
-	public void showRadioButton() {
+	public abstract void showLabels();
 
-	}
-
-	public void showViewButton() {
-
-	}
-
-	public void showLabels() {
-
-	}
-
-	public void showComboxes() {
-
-	}
+	public abstract void showComboxes();
 
 }

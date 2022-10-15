@@ -1,26 +1,48 @@
 package src;
 
+import java.util.Scanner;
+
 public class Facade {
 
 	private int UserType;
-
-	private String theSelectedProduct;
-
+	private int theSelectedProduct;
 	private int nProductCategory;
+	private int theProductList;
+	private int thePerson;
 
-	private void theProductList;
+	public void beginFacade() {
 
-	private void thePerson;
+		System.out.println("Facade pattern started ");
 
-	public boolean login() {
-		return false;
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Choose from two menu options: \n 1. Meat Product Menu \n 2. Produce Product Menu ");
+		theSelectedProduct = Integer.parseInt(scanner.nextLine());
+
+		// pattern implemented (Bridge implementation and Factory implementation)
+		if (theSelectedProduct == 1) {
+			selectCourse(new HighLevelCourseMenu(), UserType);
+		}
+
+		else if (theSelectedProduct == 2) {
+			selectCourse(new LowLevelCourseMenu(), UserType);
+		}
+
+		else {
+			System.out.println("Wrong Selection");
+			System.exit(-1);
+
+
+	}
+	public int login() {
+		return ;
 	}
 
-	public void addtrading() {
+	public void addTrading() {
 
 	}
 
-	public void viewtrading() {
+	public void viewTrading() {
 
 	}
 
