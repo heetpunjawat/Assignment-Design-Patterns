@@ -19,21 +19,20 @@ public class Facade {
 		System.out.println("Choose from two menu options: \n 1. Meat Product Menu \n 2. Produce Product Menu ");
 		theSelectedProduct = Integer.parseInt(scanner.nextLine());
 
-		// pattern implemented (Bridge implementation and Factory implementation)
+		// Bridge pattern and factory pattern implementation
 		if (theSelectedProduct == 1) {
-			selectCourse(new HighLevelCourseMenu(), UserType);
+			SelectProduct(new HighLevelCourseMenu(), UserType);
 		}
 
 		else if (theSelectedProduct == 2) {
-			selectCourse(new LowLevelCourseMenu(), UserType);
+			SelectProduct(new LowLevelCourseMenu(), UserType);
 		}
 
 		else {
-			System.out.println("Wrong Selection");
+			System.out.println("Please enter correct integer ");
 			System.exit(-1);
-
-
 	}
+
 	public int login() {
 		return ;
 	}

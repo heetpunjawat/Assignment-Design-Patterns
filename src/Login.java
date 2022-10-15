@@ -36,8 +36,18 @@ public class Login {
             UserType = 0;
         }
 
+        else if ((username.equalsIgnoreCase("Buyer")) && (password.equalsIgnoreCase(password))) {
+            System.out.println("Welcome Buyer");
+            UserType = 0;
+        }
+
         else if ((username.equalsIgnoreCase("pepe")) && (password.equalsIgnoreCase("3333"))) {
             System.out.println("Welcome Seller pepe ");
+            UserType = 1;
+        }
+
+        else if ((username.equalsIgnoreCase("Seller")) && (password.equalsIgnoreCase(password))) {
+            System.out.println("Welcome Seller");
             UserType = 1;
         }
 
