@@ -21,11 +21,11 @@ public class Facade {
 
 		// Bridge pattern and factory pattern implementation
 		if (theSelectedProduct == 1) {
-			SelectProduct(new HighLevelCourseMenu(), UserType);
+			selectProduct(new MeatProductMenu(), UserType);
 		}
 
 		else if (theSelectedProduct == 2) {
-			SelectProduct(new LowLevelCourseMenu(), UserType);
+			selectProduct(new ProduceProductMenu(), UserType);
 		}
 
 		else {
