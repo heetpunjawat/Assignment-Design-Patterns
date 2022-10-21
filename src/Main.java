@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-// Facade pattern called in main to use as an interface layer
+        // Facade Pattern called
         Facade object = new Facade();
         object.beginFacade();
     }

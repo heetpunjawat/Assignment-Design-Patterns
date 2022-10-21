@@ -1,31 +1,35 @@
 package src;
 
-public class Person {
+public abstract class Person {
+	protected static ProductMenu theProductMenu;
 
-	private int theProductMenu;
+	public abstract void ShowMenu();
 
-	public void showMenu() {
+	public abstract ProductMenu createProductMenu();
 
+	@SuppressWarnings("static-access")
+	Person(ProductMenu theProductMenu) {
+		this.theProductMenu = theProductMenu;
 	}
 
-	public void showAddButton() {
-
+	public void showAddButtons() {
+		theProductMenu.ShowAddButtons();
 	}
 
-	public void showRadioButton() {
+	public void showViewButtons() {
 
+		theProductMenu.ShowViewButtons();
+	}
+
+	public void showRadios() {
+		theProductMenu.ShowRadios();
+	}
+
+	public void showCombos() {
+		theProductMenu.showComboxes();
 	}
 
 	public void showLabels() {
-
+		theProductMenu.ShowLabels();
 	}
-
-	public int CreateProductMenu() {
-		return 0;
-	}
-
-	public void showViewButton() {
-
-	}
-
 }

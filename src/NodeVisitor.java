@@ -1,17 +1,13 @@
 package src;
 
-public class NodeVisitor {
+public abstract class NodeVisitor {
 
-	public void visitProduct(int product) {
+	public abstract void visitFAcade(Facade F);
 
-	}
+	public abstract void visitFacade(Facade F);
 
-	public void visitTrading(int trading) {
+	public abstract Reminder visitTrading(Trading T);
 
-	}
-
-	public void visitFacade(Facade facade) {
-
-	}
-
+	public abstract Reminder visitProduct(ClassProductList CL);
 }
+

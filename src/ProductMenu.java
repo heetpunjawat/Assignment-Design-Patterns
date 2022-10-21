@@ -2,16 +2,28 @@ package src;
 
 public abstract class ProductMenu {
 
-	public abstract void showMenu();
+	public abstract void ShowAddButtons();
 
-	public abstract void showAddButton();
+	public abstract void ShowViewButtons();
 
-	public abstract void showRadioButton();
-
-	public abstract void showViewButton();
-
-	public abstract void showLabels();
+	public abstract void ShowRadios();
 
 	public abstract void showComboxes();
+
+	public abstract void ShowLabels();
+
+	public abstract void selectProduct(int USerType);
+
+	public void createProductList() {
+		System.out.println("Product List created ...");
+	}
+
+	public void attachProductToUser() {
+		System.out.println("User Attached .... ");
+	}
+
+	public void productOperation() {
+		System.out.println("Operation performed on the product...");
+	}
 
 }

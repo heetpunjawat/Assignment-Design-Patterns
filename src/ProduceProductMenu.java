@@ -2,28 +2,47 @@ package src;
 
 public class ProduceProductMenu extends ProductMenu {
 
-	public void showMenu() {
+	@Override
+	public void ShowAddButtons() {
+		System.out.println();
 
 	}
 
-	public void showViewButton() {
+	@Override
+	public void ShowViewButtons() {
+		System.out.println();
 
 	}
 
-	public void showAddButton() {
+	@Override
+	public void ShowRadios() {
+		System.out.println();
 
 	}
 
-	public void showRadioButton() {
-
-	}
-
-	public void showLabels() {
-
-	}
-
+	@Override
 	public void showComboxes() {
+		System.out.println();
 
 	}
 
+	@Override
+	public void ShowLabels() {
+		System.out.println();
+
+	}
+
+	public void selectProduct(int USerType) {
+
+		System.out.println("Produce Product Menu selected ...\n Bridge Pattern for connection used ");
+		Person person;
+
+		if (USerType == 0) {
+			person = PersonFactory.createObject("Buyer");
+		}
+		else {
+			person = PersonFactory.createObject("Seller");
+		}
+		person.ShowMenu();
+	}
 }
